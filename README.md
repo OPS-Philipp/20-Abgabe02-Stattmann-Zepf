@@ -5,6 +5,5 @@ Student Team:
 - [Philipp Stattmann](https://github.com/OPS-Philipp)
 
 ### Project-description
-With this project, we've got introduced into the universe of JUnit.
 Within this project, we are supposed to learn working with JUnit 5 Testing and moreover getting in contact with Maven.
 There is a given Java-class with 3 bugs, which we have to find. We can do that with JUnit Tests.
