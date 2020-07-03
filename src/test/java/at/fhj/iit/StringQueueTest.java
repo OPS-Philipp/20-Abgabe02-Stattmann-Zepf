@@ -10,10 +10,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * Class testing the functionalities of the StringQueue class
+ *
+ * @author      Philipp Stattmann
+ * @author      Lukas Zepf
+ * @version     %I%, %G%
+ * @since       1.1
+ */
+
 class StringQueueTest {
     private StringQueue firstList;
     private StringQueue secondList;
 
+    /**
+     * inits Queues before each Test
+     */
     @BeforeEach
     void setup() {
         // SETUP PHASE
@@ -21,12 +33,18 @@ class StringQueueTest {
         secondList = new StringQueue(6);
     }
 
+    /**
+     * Tests the offer method
+     */
     @Test
     @DisplayName("Testing Offer")
     public void testOffer() {
         assertTrue(firstList.offer("Auto"), "Expected offer to return true");
     }
 
+    /**
+     * Tests the offer method with an overflow
+     */
     @Test
     @DisplayName("Testing Offer overflow")
     public void testOfferOverflow() {
@@ -34,6 +52,9 @@ class StringQueueTest {
         assertFalse(firstList.offer("Bahn"), "Expected offer to return false");
     }
 
+    /**
+     * Tests the poll method
+     */
     @Test
     @DisplayName("Testing Poll")
     public void testPoll() {
@@ -45,12 +66,18 @@ class StringQueueTest {
         assertEquals(secondList.poll(), "Bus");
     }
 
+    /**
+     * Tests the poll method without an element
+     */
     @Test
     @DisplayName("Testing Poll without element")
     public void testEmptyPoll() {
         assertNull(firstList.poll(), "Null expectet because List is empty");
     }
 
+    /**
+     * Tests the remove method
+     */
     @Test
     @DisplayName("Testing Remove")
     public void testRemove() {
@@ -62,6 +89,9 @@ class StringQueueTest {
         assertEquals(secondList.poll(), "Bus");
     }
 
+    /**
+     * Tests the remove method without an element
+     */
     @Test
     @DisplayName("Testing Remove Exception")
     public void testRemoveException() {
@@ -70,6 +100,9 @@ class StringQueueTest {
         });
     }
 
+    /**
+     * Tests the peek method
+     */
     @Test
     @DisplayName("Testing Peek")
     public void testPeek() {
@@ -77,12 +110,18 @@ class StringQueueTest {
         assertEquals(firstList.peek(), "Bus");
     }
 
+    /**
+     * Tests the peek method without elements to get null as result
+     */
     @Test
     @DisplayName("Testing Peek without elements")
     public void testEmptyPeek() {
         assertNull(firstList.peek(), "Expected peek to return Null");
     }
 
+    /**
+     * Tests the peek method with more than one element
+     */
     @Test
     @DisplayName("Testing Peek with more elements")
     public void testPeekMoreElements() {
@@ -92,6 +131,9 @@ class StringQueueTest {
         assertEquals(secondList.peek(), "Bycicle", "nothing gets removed");
     }
 
+    /**
+     * Tests the element method
+     */
     @Test
     @DisplayName("Testing element")
     public void testElement() {
@@ -99,6 +141,9 @@ class StringQueueTest {
         assertEquals(secondList.element(), "Auto");
     }
 
+    /**
+     * Tests the element method without an elemnet to get an exception
+     */
     @Test
     @DisplayName("Testing element without element")
     public void testEmptyElement() {
