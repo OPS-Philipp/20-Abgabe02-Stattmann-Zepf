@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 class StringQueueTest {
     private StringQueue firstList;
@@ -53,6 +54,19 @@ class StringQueueTest {
     @Test
     @DisplayName("Testing Remove")
     public void testRemove() {
-        //ToDo
+        assertTrue(secondList.offer("Auto"), "Expected offer to return true");
+        assertTrue(secondList.offer("Bahn"), "Expected offer to return true");
+        assertTrue(secondList.offer("Bus"), "Expected offer to return true");
+        assertEquals(secondList.poll(), "Auto");
+        assertEquals(secondList.poll(), "Bahn");
+        assertEquals(secondList.poll(), "Bus");
+    }
+
+    @Test
+    @DisplayName("Testing Remove Exception")
+    public void testRemoveException() {
+        assertThrows(NoSuchElementException.class, () -> {
+           firstList.remove();
+        });
     }
 }
