@@ -69,4 +69,26 @@ class StringQueueTest {
            firstList.remove();
         });
     }
+
+    @Test
+    @DisplayName("Testing Peek")
+    public void testPeek() {
+        assertTrue(firstList.offer("Bus"), "Expected offer to return true");
+        assertEquals(firstList.peek(), "Bus");
+    }
+
+    @Test
+    @DisplayName("Testing Peek without elements")
+    public void testEmptyPeek() {
+        assertNull(firstList.peek(), "Expected peek to return Null");
+    }
+
+    @Test
+    @DisplayName("Testing Peek with more elements")
+    public void testPeekMoreElements() {
+        secondList.offer("Bycicle");
+        assertTrue(secondList.offer("Bus"), "Expected offer to return true");
+        assertEquals(secondList.peek(), "Bycicle");
+        assertEquals(secondList.peek(), "Bycicle", "nothing gets removed");
+    }
 }
