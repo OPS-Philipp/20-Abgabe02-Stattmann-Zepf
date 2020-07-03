@@ -91,4 +91,19 @@ class StringQueueTest {
         assertEquals(secondList.peek(), "Bycicle");
         assertEquals(secondList.peek(), "Bycicle", "nothing gets removed");
     }
+
+    @Test
+    @DisplayName("Testing element")
+    public void testElement() {
+        assertTrue(secondList.offer("Auto"), "Expected offer to return true");
+        assertEquals(secondList.element(), "Auto");
+    }
+
+    @Test
+    @DisplayName("Testing element without element")
+    public void testEmptyElement() {
+        assertThrows(NoSuchElementException.class, () -> {
+            firstList.element();
+        });
+    }
 }
