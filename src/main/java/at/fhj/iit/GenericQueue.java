@@ -8,7 +8,8 @@ import java.util.NoSuchElementException;
  * Generic StringQueue for all datatypes
  * It makes it possible to create a Queue with any kind of datatype
  *
- * @author Samuel Angerer
+ * @author Lukas Zepf
+ * @author Philipp Stattmann
  * @version %I%, %G%
  * @since 1.1
  */
