@@ -9,7 +9,7 @@ public class GenericQueue<T> implements IQueue<T> {
     private List<T> elements = new ArrayList<T>();
     private int maxSize = 5;
 
-    public void StringQueue(int maxsize) {
+    public GenericQueue(int maxsize) {
         maxSize = maxsize;
     }
 
