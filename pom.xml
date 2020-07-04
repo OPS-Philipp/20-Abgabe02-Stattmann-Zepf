@@ -13,29 +13,29 @@
 
   <developers>
     <developer>
-      <id>michaelulm</id>
-      <name>Michael Ulm</name>
-      <email>michael.ulm@fh-joanneum.at</email>
-      <url>https://www.michael-ulm.at</url>
-      <organization>FH JOANNEUM GmbH</organization>
-      <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+      <id>PhilippStattmann</id>
+      <name>Philipp Stattmann</name>
+      <email>philipp.stattmann@edu.campus02.at</email>
+      <url>https://github.com/OPS-Philipp</url>
+      <organization>FH Campus02</organization>
+      <organizationUrl>https://campus02.at</organizationUrl>
       <roles>
-        <role>Lecturer</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
+        <picUrl>https://avatars3.githubusercontent.com/u/62703565</picUrl>
       </properties>
     </developer>
     <developer>
-      <id>Rigbin</id>
-      <name>Harald Schwab</name>
-      <email>harald.schwab2@fh-joanneum.at</email>
-      <url>https://github.com/Rigbin</url>
-      <organization>FH JOANNEUM GmbH</organization>
-      <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+      <id>LukasZepf</id>
+      <name>Lukas Zepf</name>
+      <email>lukas.zepf@edu.campus02.at</email>
+      <url>https://github.com/LukasZepf</url>
+      <organization>FH Campus02</organization>
+      <organizationUrl>https://campus02.at</organizationUrl>
       <roles>
-        <role>Researcher</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties/>
