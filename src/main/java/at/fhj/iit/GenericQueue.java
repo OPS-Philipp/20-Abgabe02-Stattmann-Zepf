@@ -13,6 +13,7 @@ public class GenericQueue<T> implements IQueue<T> {
         maxSize = maxsize;
     }
 
+
     @Override
     public boolean offer(T obj) {
         if (elements.size() != maxSize)
