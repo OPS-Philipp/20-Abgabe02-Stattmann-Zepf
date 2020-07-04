@@ -25,7 +25,7 @@ public class StringQueue implements IQueue<String> {
   /**
    * Constructor of the StringQueue.
    *
-   * @param maxSize the maximal amount of elements the queue can hold
+   * @param maxsize the maximal amount of elements the queue can hold
    */
   public StringQueue(int maxsize) {
     maxSize = maxsize;
