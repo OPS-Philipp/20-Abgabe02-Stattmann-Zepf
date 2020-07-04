@@ -10,10 +10,10 @@ Bei diesem Projekt lernen wir den Umgang mit JUnit 5 und Maven. Es gibt ein vorg
 - [ ] Labreport
 - [ ] Die Targets clean, validate, compile, test und site lassen sich ausführen und zeigen keine Warnungen an
 - [ ] Pom.xml ist mit den richtigen Meta-Informationen befüllt
-- [ ] 3 Fehler in StringQueue gefunden und korrigiert
+- [x] 3 Fehler in StringQueue gefunden und korrigiert
 - [ ] Generics erstellt
-- [ ] Tests erstellt
+- [X] Tests erstellt
 - [ ] Generic Version mit den Klassen String erstellt 
 - [ ] Testfile für weitere Klassen der Generic Version
-- [ ] JavaDoc Kommentare erstellt
+- [x] JavaDoc Kommentare erstellt
 - [ ] Maven Site Dokumentation erstellt
