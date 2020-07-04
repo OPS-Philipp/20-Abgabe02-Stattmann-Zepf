@@ -8,6 +8,15 @@ import java.util.NoSuchElementException;
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * Generic StringQueue for all datatypes
+ * It makes it possible to create a Queue with any kind of datatype
+ *
+ * @author Philipp Stattmann
+ * @author Lukas Zepf
+ * @version %I%, %G%
+ * @since 1.1
+ */
 public class StringQueue implements IQueue<String> {
 
   private List<String> elements = new ArrayList<String>();
