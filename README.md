@@ -7,8 +7,8 @@ Student Team:
 ### Project-description
 Bei diesem Projekt lernen wir den Umgang mit JUnit 5 und Maven. Es gibt ein vorgefertigtes Java-Framework, welches 3 Fehler beinhaltet. Diese Fehler sollten mittel JUnit-Tests gefunden und ausgebessert werden.
 
-- [ ] Labreport
-- [x] Die Targets clean, validate, compile, test und site lassen sich ausführen und zeigen keine Warnungen an
+- [X] Labreport
+- [x] Die Targets clean, validate, compile, test und site lassen sich ausführen und zeigen keine Warnungen oder Fehler an
 - [x] Pom.xml ist mit den richtigen Meta-Informationen befüllt
 - [x] 3 Fehler in StringQueue gefunden und korrigiert
 - [x] Generics erstellt
